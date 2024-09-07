@@ -1,0 +1,37 @@
+
+.tit1{
+    font-size: 50px;
+    font-family:"Bitter";
+    font-weight: 100;
+    color: #010101;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 80px;
+}
+.rings{
+    height: 100vh;
+    padding: 0 30px;
+    background-color: rgb(102, 160, 160);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 270px;
+    grid-gap: 20px;
+    padding-top: 90px;
+
+}
+
+.ring img{
+    height: 270px;
+    width: 230px;
+    margin-bottom: 15px;
+}
+
+.ring h3{
+    font-size: 25px;
+    font-family:"Bitter";
+    font-weight: 700;
+    color: #161313;
+}

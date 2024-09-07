@@ -1,0 +1,36 @@
+.tit1{
+    font-size: 50px;
+    font-family:"Bitter";
+    font-weight: 100;
+    color: #151414;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 70px;
+}
+.bracelets{
+    height: 100vh;
+    padding: 0 30px;
+    background-color:rgb(114, 79, 79);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 270px;
+    grid-gap: 10px;
+    padding-top: 90px;
+
+}
+
+.bracelet img{
+    height: 270px;
+    width: 250px;
+    margin-bottom: 15px;
+}
+
+.bracelet h3{
+    font-size: 25px;
+    font-family:"Bitter";
+    font-weight: 700;
+    color: #141211;
+}

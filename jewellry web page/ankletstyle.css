@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(37, 68, 68);
+}
+.tit1{
+    font-size: 50px;
+    font-family:"Bitter";
+    font-weight: 100;
+    color: #2a1f1e;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-top: 80px;
+}
+.anklets{
+    height: 100vh;
+    padding: 0 30px;
+    background-color: rgb(145, 178, 178);
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 270px;
+    grid-gap: 20px;
+    padding-top: 90px;
+
+
+}
+
+.anklet img{
+    height: 270px;
+    width: 235px;
+    margin-bottom: 15px;
+}
+
+.anklet h3{
+    font-size: 25px;
+    font-family:"Bitter";
+    font-weight: 700;
+    color: #201b1a;
+}
