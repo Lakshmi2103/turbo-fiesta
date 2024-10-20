@@ -1,0 +1,140 @@
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Game container */
+.game-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90vw;
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+    border: 3px solid #f67280;
+}
+
+/* Heading */
+.game-container h1 {
+    margin-bottom: 10px;
+    color: #f67280;
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Scoreboard */
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.score {
+    font-size: 1.2em;
+    color: #555555;
+    font-weight: 600;
+}
+
+/* Status display */
+.status {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #555555;
+    font-weight: 500;
+}
+
+/* Game board */
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 15px;
+    background: #fde2e4;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Cells */
+.cell {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #ffe0e0;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f67280;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cell:hover {
+    background-color: #fad4d4;
+    transform: scale(1.05);
+}
+
+.cell:active {
+    transform: scale(1.02);
+}
+
+/* Reset button */
+.reset-button {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #f8b195;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: #f67280;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.reset-button:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .game-container {
+        max-width: 320px;
+    }
+
+    .cell {
+        font-size: 2em;
+    }
+
+    .reset-button {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+
+    .game-container h1 {
+        font-size: 1.8em;
+    }
+}
